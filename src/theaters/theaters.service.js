@@ -8,7 +8,11 @@ async function list(movie_id) {
     .modify((queryBuilder) => {
       if (movie_id) {
         queryBuilder
-          .join("movies_theaters", "movies_theaters.theater_id", "theaters.theater_id")
+          .join(
+            "movies_theaters",
+            "movies_theaters.theater_id",
+            "theaters.theater_id"
+          )
           .where({ "movies_theaters.movie_id": movie_id });
       }
     })
