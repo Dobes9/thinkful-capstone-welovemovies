@@ -2,7 +2,8 @@
 
 const ReviewsService = require("./reviews.service");
 const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
-const hasProperties = require("../errors/hasProperties");
+// const hasProperties = require("../errors/hasProperties");
+const methodNotAllowed = require("../errors/methodNotAllowed");
 
 async function reviewExists(req, res, next) {
   const review = await ReviewsService.read(req.params.reviewId);
