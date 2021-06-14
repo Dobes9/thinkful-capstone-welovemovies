@@ -6,7 +6,7 @@ This assignment focuses on our ability to create a backend server, and connect i
 ## Links
 * [Live Demo](https://we-love-movies-capstone.vercel.app/)
 
-## API Routes
+## Definitions of API Routes
 
 ### GET /movies
 For this route, the server should respond with a list of every movie in the database, with the following information:
